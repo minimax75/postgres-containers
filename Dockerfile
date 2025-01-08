@@ -1,6 +1,6 @@
-# add extensions to cnpg postgresql image: timescaledb, pg_cron
-ARG POSTGRESQL_VERSION=15.3
-ARG EXTENSIONS="timescaledb cron"
+# add extensions to cnpg postgresql image: "timescaledb set-user"
+ARG POSTGRESQL_VERSION=15.10
+ARG EXTENSIONS="pg-stat-kcache set-user"
 ARG TIMESCALEDB_VERSION=2.11.0
 
 

@@ -34,6 +34,7 @@ for EXTENSION in ${EXTENSIONS}; do
         continue
     fi
 
+
     # is it an extension found in apt?
     if apt-cache show "postgresql-${PG_MAJOR}-${EXTENSION}" &> /dev/null; then
         # install the extension
